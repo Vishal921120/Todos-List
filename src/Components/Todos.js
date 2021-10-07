@@ -12,9 +12,11 @@ export default function Todos(props) {
             </h3>
             {props.todos.length===0?"NO Todos to Display!!!" :
             props.todos.map((todo)=>{
-            return <TodoItems todo={todo} key={todo.sno} onDelete={props.onDelete}/>
-            
-            })}
+            return(   
+             <TodoItems todo={todo} key={todo.sno} onDelete={props.onDelete}/>
+            )
+            })
+            }
             
 
         </div>
