@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 
 export default function Header(props) {
+
     let [backgroundColor, setBackgroundColor] = useState('blue');
     const changeColor = () => {
         console.log("hell0 1")
@@ -34,7 +35,8 @@ export default function Header(props) {
                         <li className="nav-item">
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
-                        <button className="bg-white mx-3 rounded-circle shadow border-0 hover-zoom" onClick={changeColor}>
+                        <li className="my-2">
+                        <button id="dynamic" className="bg-white mx-3 rounded-circle shadow border-0 hover-zoom" onClick={changeColor}>
                             Red navbar
                         </button>
                         <button className="bg-light rounded-circle shadow border-0" onClick={changeColorBlue}>
@@ -43,6 +45,7 @@ export default function Header(props) {
                         <button className="bg-white mx-3 rounded-circle shadow border-0" onClick={changeColorRandom}>
                             Black navbar
                         </button>
+                        </li>
                     </ul>
                     {props.searchBar ?<form className="d-flex">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

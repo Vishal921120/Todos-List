@@ -9,7 +9,7 @@ export default function Footer() {
     };
     return (
         <footer className="bg-dark text-light" style={footerstyle}>
-            <p className="text-center my-3" >Copyright@ Mytodos.com</p>
+            <p className="text-center my-3" >Copyright &copy; Mytodos.com</p>
         </footer>
     )
 }

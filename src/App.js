@@ -11,6 +11,12 @@ import {
   Route,
 } from "react-router-dom";
 
+
+
+window.onload= function(){
+  alert("Welcome to Todolist, wishing you a great future ahead!!!")
+}
+
 function App() {
   let initTodo;
   if(localStorage.getItem("todos")===null){
