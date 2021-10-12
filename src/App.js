@@ -61,7 +61,7 @@ function App() {
   return (
     <>
     <Router>
-      <Header title = "Todos list" searchBar={true}/> 
+      <Header exact path="/" title = "Todos list" searchBar={true}/> 
       <Switch>
           <Route exact path="/" render={()=>{
             return(
@@ -75,7 +75,7 @@ function App() {
             <About />
           </Route>
         </Switch>
-      <Footer/>
+      <Footer exact path="/"/>
     </Router>  
     </>
   );
